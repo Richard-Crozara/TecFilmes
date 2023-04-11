@@ -6,7 +6,7 @@ import styles from "./style";
 
 export default function BannerFilmes(){
 
-    const imagem = Math.floor(Math.random() * 4 +1);
+    const imagem = Math.floor(Math.random() * 10 +1);
 
     return(
 
