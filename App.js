@@ -3,7 +3,7 @@ import BannerFilmes from "./src/components/bannerFilmes";
 import Filmes from "./src/data/movies";
 import Header from "./src/components/header";
 import SearchBar from "./src/components/searchbar";
-import CardFilmes from "./src/components/cardFilmes";
+import CardMovies from "./src/components/cardFilmes";
 
 export default function App() {
   return (
@@ -15,15 +15,28 @@ export default function App() {
       <View style={{width:"90%"}}>
       <FlatList
       horizontal ={true}
+      showsHorizontalScrollIndicator={false}
         data={Filmes}
         keyExtractor={(item) => item.id}
         renderItem={ ({item}) => (
         
-        <CardFilmes></CardFilmes>
+        <CardMovies
+        
+        titulo = {item.nome}
+        nota = {item.nota}
+        imagem = {item.imagem}
 
-        )   }
+        />
+
+      
+
+        )}
       />
+
+
       </View>
+
+      
     </View>
   );
 }
