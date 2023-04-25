@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import BannerFilmes from "./src/components/bannerFilmes";
 import Filmes from "./src/data/movies";
+import Series from "./src/data/series";
 import Header from "./src/components/header";
 import SearchBar from "./src/components/searchbar";
 import CardMovies from "./src/components/cardFilmes";
+import CardSeries from "./src/components/cardSeries";
 
 export default function App() {
   return (
@@ -13,6 +15,15 @@ export default function App() {
       <BannerFilmes></BannerFilmes>
 
       <View style={{width:"90%"}}>
+      <Text style = {{fontSize:25,
+
+                    color: 'white',
+
+                    fontWeight:'bold',
+
+                     marginRight: 75,
+
+                     textAlign:'center'}}>Filmes</Text>
       <FlatList
       horizontal ={true}
       showsHorizontalScrollIndicator={false}
@@ -27,9 +38,31 @@ export default function App() {
         imagem = {item.imagem}
 
         />
+        )}
+      />
+<Text style = {{fontSize:25,
 
-      
+                    color: 'white',
 
+                    fontWeight:'bold',
+
+                     marginRight: 75,
+
+                     textAlign:'center'}}> Series</Text>
+<FlatList
+      horizontal ={true}
+      showsHorizontalScrollIndicator={false}
+        data={Series}
+        keyExtractor={(item) => item.id}
+        renderItem={ ({item}) => (
+        
+        <CardSeries
+        
+        titulo = {item.nome}
+        nota = {item.nota}
+        imagem = {item.imagem}
+
+        />
         )}
       />
 
