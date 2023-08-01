@@ -1,23 +1,20 @@
-import React from   'react'
-import {View,Text,TouchableOpacity} from 'react-native'
-import {Feather} from '@expo/vector-icons';
-import styles from './style'
-
+import React from "react";
+import { View,Text,TouchableOpacity } from "react-native";
+import { Entypo } from '@expo/vector-icons'; 
+import styles from "./styles";
 
 export default function Header(){
 
-    return(
-            <View style = {styles.viewHeader}>
+return(
+    <View style = {styles.viewHeader}>
+        <TouchableOpacity>
+        <Entypo style={{marginLeft:-72}} name="menu" size={30} color="white" />
+        </TouchableOpacity>
+        
 
-                <TouchableOpacity>  
+        <Text style = {styles.textHeader}> TEC FILMES </Text>
 
-                <Feather style ={{marginLeft:-70}} name = 'menu' size= {36} color = "#FFF" />
-
-                </TouchableOpacity>
-                
-                <Text style={styles.textHeader}>   TEC FILMES  </Text>
-            
-            </View>
-    );
+    </View>
+)
 
 }
