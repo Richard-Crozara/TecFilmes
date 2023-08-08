@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     myEmptyStarStyle: {
       color: 'white',
-    }
+    },
     container: {
             backgroundColor: "#141a29",
           },
