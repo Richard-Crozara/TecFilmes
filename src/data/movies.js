@@ -11,21 +11,21 @@ const DATA =
 
     {
         id: '02',
-        nome: 'Super Mario Bros.',
+        nome: 'Avatar: O Caminho da Água',
         nota: '7.1',
         imagem: '2.jpg'
     },
 
     {
         id: '03',
-        nome: 'One Piece Film: Red',
+        nome: 'Gato de Botas 2: O Último Pedido',
         nota: '10.0',
         imagem: '3.jpg'
     },
 
     {
         id: '04',
-        nome: 'Doutor Estranho no Multiverso da Loucura',
+        nome: 'Pantera Negra: Wakanda para Sempre',
         nota: '7.0',
         imagem: '4.jpg'
     },
@@ -39,35 +39,35 @@ const DATA =
 
     {
         id: '06',
-        nome: 'Shazam! Fúria dos Deuses',
+        nome: 'Super Mario Bros.',
         nota: '9.5',
         imagem: '6.jpg'
     },
 
     {
         id: '07',
-        nome: 'Vovozona',
+        nome: 'One Piece Film: Red',
         nota: '9.1',
         imagem: '7.jpg'
     },
 
     {
         id: '08',
-        nome: 'Querido John',
+        nome: 'Doutor Estranho no Multiverso da Loucura',
         nota: '8.0',
         imagem: '8.jpg'
     },
 
     {
         id: '09',
-        nome: 'Wakanda Forever',
+        nome: 'Harry Potter',
         nota: '7.8',
         imagem: '9.jpg'
     },
 
     {
         id: '10',
-        nome: 'Shazam',
+        nome: 'Shazam! Fúria dos Deuses',
         nota: '6.3',
         imagem: '10.jpg'
     }
