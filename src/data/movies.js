@@ -3,75 +3,75 @@ const DATA =
 
     {
         id: '01',
-        nome: 'Karatê Kid',
-        nota: '8.8',
-        imagem: '5.jpg'
+        nome: 'Adão Negro',
+        nota: '8.2',
+        imagem: '1.jpg'
     },
 
 
     {
         id: '02',
-        nome: 'A Procura da Felicidade',
-        nota: '7.3',
-        imagem: '6.jpg'
+        nome: 'Super Mario Bros.',
+        nota: '7.1',
+        imagem: '2.jpg'
     },
 
     {
         id: '03',
-        nome: 'Pânico 6',
-        nota: '8.5',
-        imagem: '7.jpg'
+        nome: 'One Piece Film: Red',
+        nota: '10.0',
+        imagem: '3.jpg'
     },
 
     {
         id: '04',
-        nome: 'As Branquelas',
+        nome: 'Doutor Estranho no Multiverso da Loucura',
         nota: '7.0',
-        imagem: '8.jpg'
+        imagem: '4.jpg'
     },
 
     {
         id: '05',
-        nome: 'A Cinco Passos de Você',
-        nota: '6.6',
-        imagem: '9.jpg'
+        nome: 'Homem-Aranha: Sem Volta para Casa',
+        nota: '9.8',
+        imagem: '5.jpg'
     },
 
     {
         id: '06',
-        nome: 'A Princesa e o Sapo',
+        nome: 'Shazam! Fúria dos Deuses',
         nota: '9.5',
-        imagem: '10.jpg'
+        imagem: '6.jpg'
     },
 
-  /*  {
+    {
         id: '07',
         nome: 'Vovozona',
         nota: '9.1',
-        imagem: '11.jpg'
+        imagem: '7.jpg'
     },
 
     {
         id: '08',
         nome: 'Querido John',
         nota: '8.0',
-        imagem: '12.jpg'
+        imagem: '8.jpg'
     },
 
     {
         id: '09',
         nome: 'Wakanda Forever',
         nota: '7.8',
-        imagem: '13.jpg'
+        imagem: '9.jpg'
     },
 
     {
         id: '10',
         nome: 'Shazam',
         nota: '6.3',
-        imagem: '14.jpg'
+        imagem: '10.jpg'
     }
-*/
+
 ]
 
 export default DATA;
