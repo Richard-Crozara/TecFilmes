@@ -33,13 +33,6 @@ export default function App() {
 
       <View style={{width:"90%"}}>
 
-
-<Text style = {{fontSize:25,
-                    color: 'white',
-                    fontWeight:'bold',
-                     marginRight: 75,
-                     textAlign:'left'}}> Filmes </Text>
-
       <FlatList
 
       horizontal ={true}
@@ -53,7 +46,6 @@ export default function App() {
         renderItem={ ({item}) => (
 
         
-            
 
         <CardMovies
 
@@ -76,11 +68,10 @@ export default function App() {
       <View style={{width:"90%"}}>
 
       <Text style = {{fontSize:25,
-                     color: 'white',
-                     fontWeight:'bold',
-                     width:255,
+                    color: 'white',
+                    fontWeight:'bold',
                      marginRight: 75,
-                     textAlign:'left'}}> Series</Text>
+                     textAlign:'center'}}> Series</Text>
 
 
       <FlatList
