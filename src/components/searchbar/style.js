@@ -7,13 +7,15 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginTop: 50,
     alignItems: "center",
-    borderRadius: 3,
+    borderRadius: 18,
+    height: 35
   },
 
   inputSearch: {
     height: 30,
     width: "100%",
     marginLeft: 5,
+    borderRadius: 10
   },
 });
 

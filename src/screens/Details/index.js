@@ -16,9 +16,9 @@ return(
     <View style = {styles.container}>
 
          
-                 <Image style = {styles.image} source={require(`../../Img/${route.params.imagem}`)} />
+                 <Image style = {styles.image} source={{uri:`https://image.tmdb.org/t/p/original/${route.params.imagem}`}} />
                <Stars
-    default={2.5}
+    default={10}
     count={10}
     half={true}
     starSize={50} 
@@ -70,16 +70,15 @@ const styles = StyleSheet.create({
         fontSize:25,
         color: 'white',
         fontWeight:'bold',
-         marginRight: 75,
-         textAlign:'right'
+         textAlign:'center'
       },
       textTitulo:{
-          marginRight:500,
-        fontSize:25,
+        fontSize:20,
         color: 'white',
         fontWeight:'bold',
-         marginRight: 75,
-         textAlign:'right'
+         marginRight: 230,
+         textAlign:'left',
+         marginTop:30,
       },
 
       image:{
