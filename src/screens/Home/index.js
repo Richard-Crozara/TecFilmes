@@ -82,12 +82,11 @@ export default function App() {
         
       renderItem={ ({item}) => (
 
-        
-
         <CardMovies
       imagem = {item.poster_path}        
       titulo = {item.title}
       nota = {item.vote_average}
+      sinopse = {item.overview}
         />
 
         )}
@@ -124,9 +123,10 @@ export default function App() {
 
         
 
-        imagem = {item.poster_path}        
+      imagem = {item.poster_path}        
       titulo = {item.name}
       nota = {item.vote_average}
+      sinopse = {item.overview}
 
         />
 

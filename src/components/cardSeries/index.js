@@ -7,7 +7,7 @@ import styles from "./style";
 import { useNavigation } from "@react-navigation/core";
 
 
-export default function CardItens({titulo,nota,imagem}) {
+export default function CardItens({titulo,nota,imagem,sinopse}) {
 
     const navigation = useNavigation()
 
@@ -15,7 +15,7 @@ export default function CardItens({titulo,nota,imagem}) {
 
  
       
-    <TouchableOpacity onPress ={() => navigation.navigate('details' , {titulo:titulo , imagem:imagem, nota:nota})} style = {styles.containerFilmes}>
+    <TouchableOpacity onPress ={() => navigation.navigate('details' , {titulo:titulo , imagem:imagem, nota:nota, sinopse:sinopse})} style = {styles.containerFilmes}>
 
 
               <Image style={styles.imagemFilmes} source={{uri:`https://image.tmdb.org/t/p/original/${imagem}`}} />
