@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image,  StyleSheet } from "react-native";
+import { View, Text, Image,  StyleSheet, TouchableOpacity } from "react-native";
 import {useRoute} from '@react-navigation/native';
 import Stars from 'react-native-stars';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -15,6 +15,17 @@ return(
 
     <View style = {styles.container}>
 
+              <TouchableOpacity style={styles.Botaovoltar} onPress={ () => navigation.navigate('Home')}>
+                <Icon 
+                name="chevron-left-circle" 
+                size={40} color='#FFF' 
+                style={styles.Icon}
+                />
+
+                <Text style={styles.TituloTela}>
+                  Detalhes
+                </Text>
+                </TouchableOpacity>
          
                  <Image style = {styles.image} source={{uri:`https://image.tmdb.org/t/p/original/${route.params.imagem}`}} />
                
@@ -67,24 +78,37 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textTitulo: {
-    fontSize: 24, // Altere o tamanho da fonte do título para 24
+    fontSize: 24, 
     color: 'white',
     fontWeight: 'bold',
-    textAlign: 'center', // Centralize o texto
-    marginBottom: 10, // Adicione margem inferior para espaço
+    textAlign: 'center', 
+    marginBottom: 10, 
   },
   textSinopse: {
-    fontSize: 16, // Altere o tamanho da fonte da sinopse para 16
+    fontSize: 16, 
     color: 'white',
     fontWeight: 'bold',
-    textAlign: 'center', // Centralize o texto
-    marginHorizontal: 20, // Adicione margens horizontais para espaçamento
-    marginTop: 20, // Adicione margem superior para espaçamento
+    textAlign: 'center', 
+    marginHorizontal: 20, 
+    marginTop: 20, 
   },
   image: {
     width: '90%',
     height: 400,
-    marginTop: 15,
+    marginTop: 10,
     borderRadius: 10,
   },
+  Icon: {
+    marginLeft: -175,
+    marginTop: 15
+  },
+  TituloTela: {
+    fontSize: 30,
+    color: "#FFF",
+    marginTop: 15,
+    marginLeft: 10
+  },
+  Botaovoltar: {
+    flexDirection: 'row'
+  }
 });

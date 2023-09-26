@@ -18,7 +18,7 @@ return(
                     headerShown: false,
                 }
             }/>
-          <stack.Screen name = 'details' component = {Details}/>
+          <stack.Screen name = 'details' component = {Details} options = {{headerShown: false}}/>
         </stack.Navigator>
     </NavigationContainer>
 
