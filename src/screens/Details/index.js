@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textTitulo: {
-    fontSize: 24, 
+    fontSize: 24,   
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center', 
